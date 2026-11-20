@@ -1,6 +1,6 @@
 {
   "name": "@wagq/dsh-terminal",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "把电脑终端接到 DSH 左侧栏：真 PTY + xterm 渲染，多窗口、命令执行、重命名。",
   "license": "MIT",
   "type": "module",
@@ -46,6 +46,7 @@
     "@types/node": "^22.10.0",
     "typescript": "^5.6.0"
   },
+  "repository": "github:sdmu-gaoqi/dsh-terminal",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
