@@ -1,0 +1,21 @@
+node_modules/
+.idea/
+dist/
+yalc.lock
+.yalc
+.eslintcache
+public/ffmpeg/
+
+# 本地验证产物（临时页面与截图）
+.verify/
+
+# 本地工具记录
+.deja/
+
+# 构建缓存
+*.tsbuildinfo
+
+# 需要可以放开,这个用的不多,不用记忆了
+.workbuddy-ai
+.workbuddy
+pnpm-lock.yaml

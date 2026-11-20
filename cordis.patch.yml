@@ -1,0 +1,6 @@
+# @wagq/dsh-terminal bundle layer
+# 与 dsh-bili-mini 一致：靠 bundle patch 注册 host 插件，
+# 客户端 UI 由 package.json 的 dsh.client 声明自动加载。
+- insert:
+    - id: wagq-dsh-terminal
+      name: '@wagq/dsh-terminal'
