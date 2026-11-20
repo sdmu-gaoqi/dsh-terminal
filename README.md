@@ -16,25 +16,21 @@
 
 ### 安装命令
 
-从一个克隆好的源码目录安装（推荐，当前版本以源码分发）：
+```sh
+dsh plugin --profile web add github:sdmu-gaoqi/dsh-terminal
+```
+
+安装到桌面版（默认 profile 名为 `desktop`）：
 
 ```sh
-git clone https://github.com/sdmu-gaoqi/dsh-terminal.git
-cd dsh-terminal
-pnpm install          # 会顺带执行构建，产出 dist/
+dsh plugin --profile desktop add github:sdmu-gaoqi/dsh-terminal
 ```
 
-然后在 DSH 里：**设置 → 插件 → 从本地目录添加**，选中这个目录，重启 DSH。
+装完重启 DSH：
 
-也可以在 profile 的 `package.json` 里手动加一条依赖：
-
-```json
-{
-  "dependencies": { "@wagq/dsh-terminal": "link:D:/path/to/dsh-terminal" }
-}
+```sh
+dsh --profile web
 ```
-
-并把 `"@wagq/dsh-terminal"` 加进 `dsh.profile.bundles`，然后重装依赖、重启 DSH。
 
 > 装完必须**完全退出 DSH 再重新打开**，左侧栏才会出现新入口（DSH 只在启动时加载界面插件）。
 
